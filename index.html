@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>নিউক্লিয়াস – ক্লাস ৮</title>
+<style>
+:root{--bg:#f6f8fb;--card:#fff;--tx:#1b2430;--mu:#5a6678;--pr:#0f766e;--pr2:#ccfbf1;--ac:#b45309;--ac2:#fef3c7;--bd:#d8dee8;--ok:#15803d;--no:#b91c1c;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10161d;--card:#18212b;--tx:#eef2f7;--mu:#a3b0c2;--pr:#2dd4bf;--pr2:#0f3b38;--ac:#fbbf24;--ac2:#3a2c0b;--bd:#2c3846;--ok:#4ade80;--no:#f87171}}
+:root[data-theme="dark"]{--bg:#10161d;--card:#18212b;--tx:#eef2f7;--mu:#a3b0c2;--pr:#2dd4bf;--pr2:#0f3b38;--ac:#fbbf24;--ac2:#3a2c0b;--bd:#2c3846;--ok:#4ade80;--no:#f87171}
+*{box-sizing:border-box}html,body{margin:0;height:100%}
+body{background:var(--bg);color:var(--tx);font-family:"Noto Sans Bengali","Hind Siliguri","Kalpurush",system-ui,sans-serif;font-size:clamp(17px,2.1vw,26px);line-height:1.6;display:flex;flex-direction:column}
+header{display:flex;align-items:center;gap:12px;padding:10px 20px;border-bottom:1px solid var(--bd);background:var(--card)}
+header b{color:var(--pr)}.sp{flex:1}
+.bar{height:6px;background:var(--bd)}.bar i{display:block;height:100%;background:var(--pr);width:0;transition:width .3s}
+main{flex:1;overflow:auto;padding:24px clamp(16px,5vw,64px)}
+.slide{display:none;max-width:1100px;margin:0 auto;animation:f .3s}.slide.on{display:block}
+@keyframes f{from{opacity:0;transform:translateY(8px)}to{opacity:1}}
+h1{font-size:1.9em;margin:.2em 0;color:var(--pr)}h2{font-size:1.5em;margin:.2em 0 .6em}
+.tag{display:inline-block;background:var(--pr2);color:var(--pr);padding:2px 14px;border-radius:99px;font-size:.7em;font-weight:700}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:16px 20px;margin:10px 0}
+.big{font-size:1.5em;font-weight:700;text-align:center;padding:28px 12px}
+.ans{display:none;text-align:center;font-size:2em;font-weight:800;color:var(--ac);background:var(--ac2);border-radius:14px;padding:18px;margin-top:12px}
+.ans.on{display:block}
+button{font:inherit;cursor:pointer;border:1px solid var(--bd);background:var(--card);color:var(--tx);border-radius:10px;padding:8px 18px}
+button.p{background:var(--pr);color:#fff;border-color:var(--pr)}
+:root:not([data-theme="light"]) button.p{color:#06201d}
+button:disabled{opacity:.4;cursor:default}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+.part{text-align:left;padding:14px 16px;min-height:90px}.part b{color:var(--pr)}.part span{display:none;color:var(--mu);font-size:.85em}.part.on span{display:block}
+.fb{background:var(--pr2);border:2px dashed var(--pr);border-radius:14px;padding:12px 18px;margin-top:14px;font-size:.85em}
+.fb b{color:var(--pr)}.fb label{display:block;cursor:pointer}
+iframe{width:100%;height:min(58vh,520px);border:1px solid var(--bd);border-radius:12px;background:#000}
+table{width:100%;border-collapse:collapse}td,th{border:1px solid var(--bd);padding:8px 12px;text-align:left}th{background:var(--pr2);color:var(--pr)}
+tr.h{display:none}tr.h.on{display:table-row}
+.opt{display:block;width:100%;text-align:left;margin:6px 0}.opt.ok{background:var(--ok);color:#fff;border-color:var(--ok)}.opt.no{background:var(--no);color:#fff;border-color:var(--no)}
+footer{display:flex;align-items:center;gap:10px;padding:10px 20px;border-top:1px solid var(--bd);background:var(--card)}
+.timer{font-variant-numeric:tabular-nums;font-weight:700;color:var(--ac)}
+ul{margin:.3em 0;padding-left:1.2em}
+</style>
+</head>
+<body>
+<header><b>নিউক্লিয়াস</b><span class="tag">ক্লাস ৮</span><span class="sp"></span><span id="cnt"></span></header>
+<div class="bar"><i id="pb"></i></div>
+<main>
+
+<section class="slide">
+<span class="tag">আজকের ক্লাস</span>
+<h1>কোষের নিয়ন্ত্রণকেন্দ্র: নিউক্লিয়াস</h1>
+<div class="card"><h2>আজকের লক্ষ্য</h2>
+<p>ক্লাস শেষে তোমরা পারবে:</p>
+<ul><li>নিউক্লিয়াসের অংশগুলোর নাম বলতে</li><li>প্রতিটি অংশের কাজ ব্যাখ্যা করতে</li><li>নিউক্লিয়াসের সঙ্গে দৈনন্দিন জিনিসের তুলনা করতে</li></ul></div>
+</section>
+
+<section class="slide" data-t="60">
+<span class="tag">প্রশ্ন ১</span>
+<div class="card big">আমাদের পুরো শরীরের সবচেয়ে গুরুত্বপূর্ণ অংশ কোনটি?</div>
+<p>১ মিনিট পাশের জনের সঙ্গে আলোচনা করো, তারপর উত্তর দাও।</p>
+<button class="p" onclick="rv(this)">উত্তর দেখাও</button>
+<div class="ans">মস্তিষ্ক (ব্রেইন)</div>
+</section>
+
+<section class="slide" data-t="60">
+<span class="tag">প্রশ্ন ২</span>
+<div class="card big">তাহলে আমাদের শরীর যে কোষ দিয়ে তৈরি, সেই কোষের সবচেয়ে গুরুত্বপূর্ণ অংশ কোনটি?</div>
+<button class="p" onclick="rv(this)">উত্তর দেখাও</button>
+<div class="ans">নিউক্লিয়াস</div>
+<div class="card" style="margin-top:14px">নিউক্লিয়াসকে বলা হয় কোষের <b>কেন্দ্র</b>, <b>প্রাণকেন্দ্র</b> বা <b>মস্তিষ্ক</b>। কেন?</div>
+</section>
+
+<section class="slide">
+<span class="tag">কেন গুরুত্বপূর্ণ?</span>
+<h2>নিউক্লিয়াস কোষের নিয়ন্ত্রণকেন্দ্র, কারণ:</h2>
+<div class="grid" id="why">
+<button class="card part" onclick="this.classList.toggle('on')"><b>১. কোষের কাজ নিয়ন্ত্রণ করে</b><span>কোষ কখন কী করবে, তার নির্দেশ দেয়।</span></button>
+<button class="card part" onclick="this.classList.toggle('on')"><b>২. বংশগতির তথ্য রাখে</b><span>DNA-তে বাবা-মায়ের বৈশিষ্ট্যের তথ্য থাকে।</span></button>
+<button class="card part" onclick="this.classList.toggle('on')"><b>৩. কোষবিভাজন চালায়</b><span>নিউক্লিয়াস ছাড়া নতুন কোষ তৈরি হয় না।</span></button>
+</div>
+<p>মজার তথ্য: মানুষের <b>লোহিত রক্তকণিকায়</b> নিউক্লিয়াস থাকে না!</p>
+</section>
+
+<section class="slide" data-t="180">
+<span class="tag">3D মডেল</span>
+<h2>চলো নিজের চোখে দেখি</h2>
+<iframe id="sk" title="Nucleus 3D" allow="autoplay; fullscreen; xr-spatial-tracking" allowfullscreen src="https://sketchfab.com/models/7e01bff42b2d47fab640503bcef071e6/embed"></iframe>
+<p style="font-size:.8em"><a href="https://sketchfab.com/3d-models/nucleus-cell-organelles-7e01bff42b2d47fab640503bcef071e6" target="_blank" rel="noopener">মডেলটি না দেখা গেলে এখানে ট্যাপ করে নতুন ট্যাবে খোলো</a></p>
+<p>দেখো: নিউক্লিয়াস কোথায় আছে? বাইরে কী আছে? ভেতরে কী আছে?</p>
+</section>
+
+<section class="slide">
+<span class="tag">চিত্র</span>
+<h2>নিউক্লিয়াসের চারটি অংশ</h2>
+<div class="card big">নিউক্লিয়াসের চিত্রটি দেখতে নিচের বোতামে ট্যাপ করো</div>
+<p style="text-align:center"><a href="https://stock.adobe.com/images/cell-nucleus-anatomy-diagram/212951817" target="_blank" rel="noopener"><button class="p">চিত্রটি খোলো ↗</button></a></p>
+</section>
+
+<section class="slide">
+<span class="tag">অংশ ও কাজ</span>
+<h2>নিউক্লিয়াস কী কী দিয়ে তৈরি?</h2>
+<div class="grid">
+<button class="card part" onclick="this.classList.toggle('on')"><b>নিউক্লিয়ার মেমব্রেন</b><span>দুই স্তরের পর্দা। ছিদ্র দিয়ে দরকারি জিনিস ঢোকে-বেরোয়। ভেতরের জিনিস রক্ষা করে।</span></button>
+<button class="card part" onclick="this.classList.toggle('on')"><b>নিউক্লিওপ্লাজম</b><span>ভেতরের জেলির মতো তরল। সব অংশ এতে ভাসে।</span></button>
+<button class="card part" onclick="this.classList.toggle('on')"><b>নিউক্লিয়োলাস</b><span>ছোট গোল অংশ। রাইবোসোম তৈরি করে।</span></button>
+<button class="card part" onclick="this.classList.toggle('on')"><b>ক্রোমাটিন / DNA</b><span>সুতার মতো। বংশগতির তথ্য বহন করে। কোষ ভাগের সময় ক্রোমোসোম হয়।</span></button>
+</div>
+</section>
+
+<section class="slide">
+<span class="tag">শিক্ষার্থীকে প্রশ্ন</span>
+<h2>২-১ জনকে প্রশ্ন করি</h2>
+<div class="card"><b>প্রশ্ন ক:</b> নিউক্লিয়াসের পর্দাটির নাম কী? এর কাজ কী?
+<br><button onclick="rv(this)" style="margin-top:6px">উত্তর</button><div class="ans" style="font-size:.9em;font-weight:600">নিউক্লিয়ার মেমব্রেন। ভেতরের জিনিস রক্ষা করে ও ছিদ্র দিয়ে আদান-প্রদান নিয়ন্ত্রণ করে।</div></div>
+<div class="card"><b>প্রশ্ন খ:</b> নিউক্লিয়োলাস কী কাজ করে?
+<br><button onclick="rv(this)" style="margin-top:6px">উত্তর</button><div class="ans" style="font-size:.9em;font-weight:600">রাইবোসোম তৈরি করে।</div></div>
+</section>
+
+<section class="slide" data-t="240">
+<span class="tag">তুলনা</span>
+<h2>তুলনা করো</h2>
+<p>১ জন তুলনা করবে, আরেক জন বলবে তুলনাটা ঠিক হয়েছে কি না।</p>
+</section>
+
+<section class="slide">
+<span class="tag">Exit Ticket</span>
+<h2>দ্রুত যাচাই</h2>
+<div id="quiz"></div>
+<h2 id="sc" style="color:var(--pr)"></h2>
+</section>
+
+<section class="slide">
+<span class="tag">শেষ কথা</span>
+<h1>আজ আমরা শিখলাম</h1>
+<div class="card"><ul><li>নিউক্লিয়াস কোষের নিয়ন্ত্রণকেন্দ্র</li><li>অংশ: মেমব্রেন, নিউক্লিওপ্লাজম, নিউক্লিয়োলাস, ক্রোমাটিন</li><li>কাজ: নিয়ন্ত্রণ, বংশগতির তথ্য, কোষবিভাজন</li></ul></div>
+</section>
+
+</main>
+<footer>
+<button id="bk" onclick="go(-1)">← আগে</button>
+<span class="timer" id="tm"></span><button id="tb" onclick="tt()" style="display:none">টাইমার</button>
+<span class="sp"></span>
+<button class="p" id="nxb" onclick="go(1)">পরে →</button>
+</footer>
+<script>
+var S=[].slice.call(document.querySelectorAll('.slide')),i=0,iv=null,left=0;
+function rv(b){var a=b.nextElementSibling;a.classList.add('on');b.disabled=true}
+function show(n){i=Math.max(0,Math.min(S.length-1,n));S.forEach(function(s,k){s.classList.toggle('on',k===i)});
+document.getElementById('cnt').textContent=(i+1)+' / '+S.length;
+document.getElementById('pb').style.width=((i+1)/S.length*100)+'%';
+document.getElementById('bk').disabled=i===0;document.getElementById('nxb').disabled=i===S.length-1;
+clearInterval(iv);var t=+S[i].getAttribute('data-t');var tb=document.getElementById('tb'),tm=document.getElementById('tm');
+if(t){left=t;tb.style.display='';tb.textContent='টাইমার চালু';draw()}else{tb.style.display='none';tm.textContent=''}
+document.querySelector('main').scrollTop=0;try{location.hash='s'+(i+1)}catch(e){}}
+function draw(){var m=Math.floor(left/60),s=left%60;document.getElementById('tm').textContent='⏱ '+m+':'+(s<10?'0':'')+s}
+function tt(){clearInterval(iv);iv=setInterval(function(){left--;draw();if(left<=0){clearInterval(iv)}},1000);document.getElementById('tb').textContent='চলছে…'}
+function go(d){show(i+d)}
+document.addEventListener('keydown',function(e){if(e.key==='ArrowRight'||e.key===' ')go(1);if(e.key==='ArrowLeft')go(-1)});
+var Q=[["নিউক্লিয়োলাসের কাজ কী?",["রাইবোসোম তৈরি","শক্তি তৈরি","খাবার জমানো"],0],["নিউক্লিয়াসের পর্দার নাম কী?",["কোষপ্রাচীর","নিউক্লিয়ার মেমব্রেন","সাইটোপ্লাজম"],1]],sc=0,ad=0;
+var qb=document.getElementById('quiz');
+Q.forEach(function(q,qi){var d=document.createElement('div');d.className='card';d.innerHTML='<b>'+(qi+1)+'. '+q[0]+'</b>';
+q[1].forEach(function(o,oi){var b=document.createElement('button');b.className='opt';b.textContent=o;
+b.onclick=function(){if(d.done)return;d.done=1;var bs=d.querySelectorAll('.opt');bs[q[2]].classList.add('ok');if(oi===q[2])sc++;else b.classList.add('no');
+ad++;if(ad===Q.length)document.getElementById('sc').textContent='তোমার স্কোর: '+sc+' / '+Q.length};d.appendChild(b)});qb.appendChild(d)});
+var h=parseInt((location.hash||'').replace('#s',''));show(h>0?h-1:0);
+</script>
+</body>
+</html>
